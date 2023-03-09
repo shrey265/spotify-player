@@ -1,4 +1,4 @@
-//console.log("Welcome to spotify");
+console.log("Welcome to spotify");
 
 
 let songIndex=0;
@@ -23,6 +23,23 @@ let songs = [
     {songName: "Salam-e-Ishq", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
 ]
 
+
+
+function getDuration(src, element) {
+    var audio = new Audio(src);
+    audio.addEventListener("loadeddata", () => {
+        let duration = Math.floor(audio.duration);
+        console.log( element.innerText);
+        var seconds = duration%60;
+        if(seconds<10){
+            element.innerText = `0${Math.floor(duration/60)}`+`:0${seconds}` ;
+        }
+        else{
+            element.innerText = `0${Math.floor(duration/60)}`+`:${seconds}` ;
+        }
+        
+      });
+}
 
 const next = ()=>{
     if(songIndex>=9){
@@ -52,6 +69,7 @@ songsItems.forEach((element,i)=>{
     //console.log(element,i);
     element.getElementsByTagName("img")[0].src=songs[i].coverPath;
     element.getElementsByClassName("songName")[0].innerText=songs[i].songName;
+    getDuration(songs[i].filePath,element.getElementsByClassName("duration")[0]);
     
 })
 

@@ -47,6 +47,7 @@ nav ul{
     display: flex;
     margin: 23px auto;
     width: 70%;
+    min-width: 250px;
     border-radius: 12px;
     padding: 34px;
     background-image: url("bg.jpg");
@@ -54,9 +55,10 @@ nav ul{
 }
 
 .bottom {
-    position: sticky;
-    margin-bottom: 0;
-    height: 8vw;
+    position: fixed;
+    bottom: 0;
+    min-height: 40px;
+    width: 100vw;
     background-color: black;
     bottom: 0;
     display: flex;
@@ -64,17 +66,19 @@ nav ul{
     align-items: center;
     color: white;
     flex-direction: column;
+    padding: 2vw auto;
 }
 
 .icons {
     margin-top: 12px;
+    
 }
 .icons i {
     cursor: pointer;
 }
 
 #myProgressBar{
-    width: 70vw;
+    width: 80vw;
     cursor: pointer;
 }
 
@@ -94,22 +98,37 @@ nav ul{
     color: black;
     margin: 12px 0;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     border-radius: 34px;
 }
+
 .songItem img{
     width: 44px;
-    margin: 0 23px;
+    margin: 0 15px;
     border-radius: 34px;
 }
 
+
+.songName{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 80px;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
 .timestamp{
-    margin: 0 23px;
+    display: flex;
+    justify-items: center;
+    right: 10px;
+    
 }
 
 .timestamp i{
     cursor: pointer;
-    margin: 0 8px;
+    margin: 0 20px;
 }
 
 .songInfo{
@@ -124,13 +143,32 @@ nav ul{
 }
 
 .icons i{
-    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
 }
 
+input{
+    margin: 10px auto;
+}
 
+.space{
+    height: 10vw;
+}
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
     body {
       background-color: red;
+    }
+    .songInfo{
+        position: relative;
+        left: -5vw;
+        font-family: 'Varella Round', sans-serif;
+    }
+    input{
+        margin: 10px auto;
+    }
+    .space{
+        height: 30vw;
     }
   }
