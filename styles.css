@@ -149,7 +149,7 @@ nav ul{
 }
 
 input{
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .space{
@@ -166,7 +166,7 @@ input{
         font-family: 'Varella Round', sans-serif;
     }
     input{
-        margin: 10px auto;
+        margin: 20px auto;
     }
     .space{
         height: 30vw;

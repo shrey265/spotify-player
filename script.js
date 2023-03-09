@@ -11,16 +11,16 @@ let songsItems = Array.from(document.getElementsByClassName('songItem'));
 let songsItemsPlays = Array.from(document.getElementsByClassName('songItemPlay'));
 let masterSongName = document.getElementById('masterSongName');
 let songs = [
-    {songName: "Kabira", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Tujh Mein Rab Dikhta Hai", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Ae Dil Hai Mushkil", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Chaiyya Chaiyya", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Kajra Re", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Tum Hi Ho", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
-    {songName: "Kal Ho Naa Ho", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
-    {songName: "Ghoomar", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
-    {songName: "Badtameez Dil", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
-    {songName: "Salam-e-Ishq", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
+    {songName: "celtic-irish-scottish-tin-whistle-background-music-10455", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "drill-it-is-127505", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "english-waltz-slow-waltz-orchestra-and-concert-grand-piano-8284", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "i-canx27t-fall-in-love-106865", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "intro-music-black-box-roughly-made-bass-house-13217", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "miyagisama-drill-time-story-production-drill-music-action-10497", filePath: "songs/6.mp3", coverPath: "covers/6.jpg"},
+    {songName: "remembering-you-130492", filePath: "songs/7.mp3", coverPath: "covers/7.jpg"},
+    {songName: "scarborough-fair-piano-and-pad-english-folk-song-17th-century-3065", filePath: "songs/8.mp3", coverPath: "covers/8.jpg"},
+    {songName: "the-adventures-of-mr-hardy-129228", filePath: "songs/9.mp3", coverPath: "covers/9.jpg"},
+    {songName: "we-wish-you-a-merry-christmas-english-carol-sheppard-flute-8848", filePath: "songs/10.mp3", coverPath: "covers/10.jpg"},
 ]
 
 
